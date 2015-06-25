@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\libs\Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\Parse-1.9.1-e1824b612e169d814d46f5f1ed0409a9c8dfa2c9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\exploded-aar\com.github.rey5137\material\1.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="212094510b899cf83942a9d4a90ef825707757fc">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\classes-0614c0c6ce881222aebc522eeb8d678ee512d470.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-90567df4345c563fbb2f1f8e46bb2a9c249cc0e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-9e44539d8b11319261cbb5f5f5aa1ffce4978e6b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\classes-62375f419bb5111ec73d0db5dd0be7281b95bec0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-73ed702d5b51c7bc262f3ade3a0390f50096075f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\classes-4fc4c118372deff557befbeec454e0b8ffceb824.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Mart\AndroidStudioProjects\E-Ballot\app\build\intermediates\pre-dexed\debug\classes-0a662caf59bc32a38c8501e7fc18257ba657cbf8.jar" />
+    </item>
+
+</items>

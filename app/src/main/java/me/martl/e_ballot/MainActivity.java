@@ -14,7 +14,9 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -31,6 +33,27 @@ public class MainActivity extends ActionBarActivity {
         usernameField = (EditText) findViewById(R.id.username_field);
         passwordField = (EditText) findViewById(R.id.password_field);
         loginButton = (Button) findViewById(R.id.login_button);
+
+        //crappp
+//        ParseUser user = new ParseUser();
+//        user.setUsername("Eight");
+//        user.setPassword("annonlahe");
+//
+//        user.signUpInBackground(new SignUpCallback() {
+//            public void done(ParseException e) {
+//                if (e == null) {
+//                    Toast.makeText(MainActivity.this, "new user!", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    Toast.makeText(MainActivity.this, "crap", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+//
+//        ParseObject gameScore = new ParseObject("Adjudicator");
+//        gameScore.put("name", "Doris Abe");
+//        gameScore.put("active", true);
+//        gameScore.saveInBackground();
+        //crapppp
 
         usernameField.addTextChangedListener(new TextWatcher() {
             @Override
