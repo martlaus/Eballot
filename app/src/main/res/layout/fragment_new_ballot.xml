@@ -117,7 +117,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Opening government"
+            android:hint="Opening government team name"
             android:id="@+id/og_team"
             android:textAlignment="center"
             android:layout_centerInParent="true"
@@ -237,7 +237,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Opening oppostion"
+            android:hint="Opening oppostion team name"
             android:id="@+id/oo_team"
             android:textAlignment="center"
             android:layout_centerInParent="true"
@@ -356,7 +356,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Closing government"
+            android:hint="Closing government team name"
             android:id="@+id/cg_team"
             android:textAlignment="center"
             android:layout_centerInParent="true"
@@ -475,7 +475,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Closing opposition"
+            android:hint="Closing opposition team name"
             android:id="@+id/co_team"
             android:textAlignment="center"
             android:layout_centerInParent="true"
