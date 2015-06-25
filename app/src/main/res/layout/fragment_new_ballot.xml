@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="10">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room number"
+                    android:id="@+id/room"
+                    android:layout_below="@+id/header"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/room_number_value"
+                    android:layout_gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Round"
+                        android:id="@+id/round"
+                        android:layout_below="@+id/header"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <Spinner
+                        android:id="@+id/round_spinner"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="8dp"
+                        android:popupBackground="@android:color/white"
+                        android:scrollbars="none"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="top|center" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adjudicators"
+            android:id="@+id/adjudicators"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <MultiAutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adjudicators_value"
+            android:hint="e.g. John Smith, Jane Doe"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="400dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Motion"
+            android:id="@+id/motion"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/motion_value"
+            android:hint="e.g. THW ban..."
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="400dp"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Opening government"
+            android:id="@+id/og_team"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="10">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Speaker 1"
+                    android:ems="10"
+                    android:id="@+id/og_speaker_1"
+                    android:layout_weight="5"/>
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="Speaker points"
+                    android:layout_width="134dp"
+                    android:id="@+id/og_speaker_1_points"
+                    android:layout_weight="5"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="10">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Speaker 2"
+                    android:ems="10"
+                    android:id="@+id/og_speaker_2"
+                    android:layout_weight="5"/>
+
+                <EditText
+                    android:layout_width="134dp"
+                    android:hint="Speaker points"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/og_speaker_2_points"
+                    android:layout_weight="5"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sum"
+                android:minEms="3"
+                android:layout_weight="1"
+                android:id="@+id/og_points_sum"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="91dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/og_spinner"
+                    android:layout_gravity="center|right" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Opening oppostion"
+            android:id="@+id/oo_team"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 1"
+                        android:ems="10"
+                        android:id="@+id/oo_speaker_1"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:hint="Speaker points"
+                        android:layout_width="134dp"
+                        android:id="@+id/oo_speaker_1_points"
+                        android:layout_weight="5"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 2"
+                        android:ems="10"
+                        android:id="@+id/oo_speaker_2"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_width="134dp"
+                        android:hint="Speaker points"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/oo_speaker_2_points"
+                        android:layout_weight="5"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sum"
+                    android:minEms="3"
+                    android:layout_weight="1"
+                    android:id="@+id/oo_points_sum"
+                    android:layout_gravity="center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="91dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/oo_spinner"
+                    android:layout_gravity="center|right" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Closing government"
+            android:id="@+id/cg_team"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 1"
+                        android:ems="10"
+                        android:id="@+id/cg_speaker_1"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:hint="Speaker points"
+                        android:layout_width="134dp"
+                        android:id="@+id/cg_speaker_1_points"
+                        android:layout_weight="5"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 2"
+                        android:ems="10"
+                        android:id="@+id/cg_speaker_2"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_width="134dp"
+                        android:hint="Speaker points"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/cg_speaker_2_points"
+                        android:layout_weight="5"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sum"
+                    android:minEms="3"
+                    android:layout_weight="1"
+                    android:id="@+id/cg_points_sum"
+                    android:layout_gravity="center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="91dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/cg_spinner"
+                    android:layout_gravity="center|right" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Closing opposition"
+            android:id="@+id/co_team"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 1"
+                        android:ems="10"
+                        android:id="@+id/co_speaker_1"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:hint="Speaker points"
+                        android:layout_width="134dp"
+                        android:id="@+id/co_speaker_1_points"
+                        android:layout_weight="5"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Speaker 2"
+                        android:ems="10"
+                        android:id="@+id/co_speaker_2"
+                        android:layout_weight="5"/>
+
+                    <EditText
+                        android:layout_width="134dp"
+                        android:hint="Speaker points"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/co_speaker_2_points"
+                        android:layout_weight="5"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sum"
+                    android:minEms="3"
+                    android:layout_weight="1"
+                    android:id="@+id/co_points_sum"
+                    android:layout_gravity="center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="91dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/co_spinner"
+                    android:layout_gravity="center|right" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit the Ballot"
+                android:id="@+id/submit_button"
+                android:onClick="submitBallot" />
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
